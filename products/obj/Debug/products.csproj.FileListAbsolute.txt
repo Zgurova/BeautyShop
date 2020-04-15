@@ -1,0 +1,11 @@
+D:\Pr\products\bin\Debug\products.exe.config
+D:\Pr\products\bin\Debug\products.exe
+D:\Pr\products\bin\Debug\products.pdb
+D:\Pr\products\obj\Debug\products.csprojAssemblyReference.cache
+D:\Pr\products\obj\Debug\products.Form1.resources
+D:\Pr\products\obj\Debug\products.Properties.Resources.resources
+D:\Pr\products\obj\Debug\products.csproj.GenerateResource.cache
+D:\Pr\products\obj\Debug\products.csproj.CoreCompileInputs.cache
+D:\Pr\products\obj\Debug\products.exe
+D:\Pr\products\obj\Debug\products.pdb
+D:\Pr\products\obj\Debug\products.exe.config
