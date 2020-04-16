@@ -34,6 +34,11 @@ namespace products
             dataGridView2.DataSource = makeUpRepository.GetAll();
         }
 
+        private void DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         /*private async void Add_Click(object sender, EventArgs e)
         {
            

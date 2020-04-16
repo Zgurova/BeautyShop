@@ -267,7 +267,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{397d950a-6ee9-4183-b2d7-fcd37f1693f9}</Project>
+      <Project>{6659e173-f3de-438e-91cb-2b2f23486ae8}</Project>
       <Name>Data</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,0 +1,9 @@
+D:\BeautyShopNew\Data\bin\Debug\netstandard2.0\Data.deps.json
+D:\BeautyShopNew\Data\bin\Debug\netstandard2.0\Data.dll
+D:\BeautyShopNew\Data\obj\Debug\netstandard2.0\Data.csprojAssemblyReference.cache
+D:\BeautyShopNew\Data\obj\Debug\netstandard2.0\Data.csproj.CoreCompileInputs.cache
+D:\BeautyShopNew\Data\obj\Debug\netstandard2.0\Data.AssemblyInfoInputs.cache
+D:\BeautyShopNew\Data\obj\Debug\netstandard2.0\Data.AssemblyInfo.cs
+D:\BeautyShopNew\Data\bin\Debug\netstandard2.0\Data.pdb
+D:\BeautyShopNew\Data\obj\Debug\netstandard2.0\Data.dll
+D:\BeautyShopNew\Data\obj\Debug\netstandard2.0\Data.pdb

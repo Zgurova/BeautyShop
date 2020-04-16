@@ -306,10 +306,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{397D950A-6EE9-4183-B2D7-FCD37F1693F9}</Project>
-      <Name>Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\products\Products.csproj">
       <Project>{64A195C3-8B48-4395-96C5-34D2BD98F8EA}</Project>
       <Name>Products</Name>
