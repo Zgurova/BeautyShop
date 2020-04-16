@@ -188,3 +188,5 @@ D:\BeautyShopNew\products\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
 D:\BeautyShopNew\products\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 D:\BeautyShopNew\products\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 D:\BeautyShopNew\products\obj\Debug\Products.csproj.CopyComplete
+D:\BeautyShopNew\products\bin\Debug\Services.dll
+D:\BeautyShopNew\products\bin\Debug\Services.pdb

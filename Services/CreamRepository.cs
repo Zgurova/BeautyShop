@@ -19,12 +19,22 @@ namespace products
         {
             List<Cream> creams = null;
             using (var context = new ProductContext())
-            {
-                creams = context.Creams.ToList();
-
-            }
-
+            {               
+               creams = context.Creams.ToList();
+            }           
             return creams;
         }
+
+        public void takeData()
+        {
+            using (var context = new ProductContext())
+            {
+                Cream cream = new Cream();
+                context.Creams.Add(cream);
+                context.SaveChanges();
+
+            }
+        }
+
     }
 }
