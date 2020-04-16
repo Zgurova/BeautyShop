@@ -11,9 +11,10 @@ namespace products
 {
     public class PerfumeRepository
     {
+        public readonly ProductContext context;
         public PerfumeRepository()
         {
-
+            var context = new ProductContext();
         }
         public List<Perfume> GetAll()
         {
@@ -25,6 +26,17 @@ namespace products
             }
 
             return perfumes;
+        }
+
+        public void takeData()
+        {
+            using (this.context)
+            {
+                Perfume perfume = new Perfume();
+                context.Perfumes.Add(perfume);
+                context.SaveChanges();
+
+            }
         }
     }
 }
