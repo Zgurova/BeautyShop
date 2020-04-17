@@ -1,4 +1,5 @@
-﻿using Data;
+﻿using Business;
+using Data;
 using System;
 using System.Windows.Forms;
 
@@ -6,11 +7,22 @@ namespace products
 {
     public partial class Form1 : Form
     {
-        private readonly ProductContext dbContext;
+       
+        private ProductBusiness productBusiness = new ProductBusiness();
         public Form1()
         {
-            InitializeComponent();
-            dbContext = new ProductContext();
+            InitializeComponent();          
+        }
+        private void UpdateGrid()
+        {
+            dataGridView2.DataSource = productBusiness.GetAll();
+            dataGridView2.ReadOnly = true;
+            dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        }
+        private void ResetSelect()
+        {
+            dataGridView2.ClearSelection();
+            dataGridView2.Enabled = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -44,21 +56,27 @@ namespace products
 
         private void Add_Click_1(object sender, EventArgs e)
         {
-            /*var perfume = new Perfume();
-            dbContext.Cart.Add(
-            {
-                
-            });*/
-        }
+            CartRepository cartRepository = new CartRepository();
 
-        /*private void Remove_Click(object sender, EventArgs e)
-        {
+            //dataGridView2.DataSource = cartRepository.Add();
+            // var perfume = new Perfume();
+
             if (dataGridView2.SelectedRows.Count > 0)
             {
                 var item = dataGridView2.SelectedRows[0].Cells;
                 var id = int.Parse(item[0].Value.ToString());
-                productBusiness.Delete(id);
+                cartRepository.Add(item);
+                // UpdateGrid();
+                //ResetSelect();            
             }
-        }*/
+        }
+
+        private void Cart_Click(object sender, EventArgs e)
+        {
+          /*  Form2 f2 = new Form2();
+            f2.Show();*/
+            CartRepository cartRepository = new CartRepository();
+            dataGridView2.DataSource = cartRepository.GetAll();
+        }
     }
 }

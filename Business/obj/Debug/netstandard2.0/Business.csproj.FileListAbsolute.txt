@@ -7,3 +7,6 @@ D:\BeautyShopNew\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.c
 D:\BeautyShopNew\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
 D:\BeautyShopNew\Business\obj\Debug\netstandard2.0\Business.dll
 D:\BeautyShopNew\Business\obj\Debug\netstandard2.0\Business.pdb
+D:\BeautyShopNew\Business\bin\Debug\netstandard2.0\Data.dll
+D:\BeautyShopNew\Business\bin\Debug\netstandard2.0\Data.pdb
+D:\BeautyShopNew\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete

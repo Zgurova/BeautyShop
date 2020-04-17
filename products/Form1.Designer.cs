@@ -87,6 +87,7 @@ namespace products
             this.Cart.TabIndex = 5;
             this.Cart.Text = "Cart";
             this.Cart.UseVisualStyleBackColor = true;
+            this.Cart.Click += new System.EventHandler(this.Cart_Click);
             // 
             // Add
             // 

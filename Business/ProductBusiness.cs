@@ -10,22 +10,13 @@ namespace Business
     {
         private ProductContext productContext;
 
-       /* public List<Perfume> GetAll()
+        public List<Cart> GetAll()
         {
             using (productContext = new ProductContext())
             {
-                return productContext.Perfumes.ToList();
+                return productContext.Cart.ToList();
             }
-        }
-
-        public Product Get(int id)
-        {
-            using (productContext = new ProductContext())
-            {
-                return productContext.Products.Find(id);
-
-            }
-        
+        }        
 
         public void Add(Perfume product)
         {
@@ -35,7 +26,7 @@ namespace Business
                 productContext.SaveChanges();
 
             }
-        }}*/
+        }
 
        /* public void Update(Product product)
         {
@@ -50,19 +41,19 @@ namespace Business
                 }
 
             }
-        }
+        }*/
 
         public void Delete(int id)
         {
             using (productContext = new ProductContext())
             {
-                var product = productContext.Products.Find(id);
+                var product = productContext.Cart.Find(id);
                 if (product != null)
                 {
-                    productContext.Products.Remove(product);
+                    productContext.Cart.Remove(product);
                     productContext.SaveChanges();
                 }
             }
-        }*/
+        }
     }
 }

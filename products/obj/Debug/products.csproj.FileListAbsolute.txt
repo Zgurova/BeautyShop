@@ -192,3 +192,5 @@ D:\BeautyShopNew\products\bin\Debug\Services.dll
 D:\BeautyShopNew\products\bin\Debug\Services.pdb
 D:\BeautyShopNew\products\obj\Debug\products.Form2.resources
 D:\BeautyShopNew\products\obj\Debug\products.Form3.resources
+D:\BeautyShopNew\products\bin\Debug\Business.dll
+D:\BeautyShopNew\products\bin\Debug\Business.pdb

@@ -19,6 +19,7 @@ namespace Data
         public DbSet<Perfume> Perfumes { get; set; }
         public DbSet<Cream> Creams { get; set; }
         public DbSet<MakeUp> MakeUp { get; set; }
+        public DbSet<Cart> Cart { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -28,44 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Creams = new System.Windows.Forms.Button();
-            this.MakeUp = new System.Windows.Forms.Button();
-            this.Perfumes = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Remove = new System.Windows.Forms.Button();
             this.Order = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Creams
-            // 
-            this.Creams.Location = new System.Drawing.Point(25, 39);
-            this.Creams.Name = "Creams";
-            this.Creams.Size = new System.Drawing.Size(92, 34);
-            this.Creams.TabIndex = 0;
-            this.Creams.Text = "Creams";
-            this.Creams.UseVisualStyleBackColor = true;
-            this.Creams.Click += new System.EventHandler(this.Creams_Click);
-            // 
-            // MakeUp
-            // 
-            this.MakeUp.Location = new System.Drawing.Point(25, 130);
-            this.MakeUp.Name = "MakeUp";
-            this.MakeUp.Size = new System.Drawing.Size(92, 31);
-            this.MakeUp.TabIndex = 1;
-            this.MakeUp.Text = "MakeUp";
-            this.MakeUp.UseVisualStyleBackColor = true;
-            this.MakeUp.Click += new System.EventHandler(this.MakeUp_Click);
-            // 
-            // Perfumes
-            // 
-            this.Perfumes.Location = new System.Drawing.Point(25, 214);
-            this.Perfumes.Name = "Perfumes";
-            this.Perfumes.Size = new System.Drawing.Size(92, 33);
-            this.Perfumes.TabIndex = 2;
-            this.Perfumes.Text = "Perfumes";
-            this.Perfumes.UseVisualStyleBackColor = true;
-            this.Perfumes.Click += new System.EventHandler(this.Perfumes_Click);
             // 
             // dataGridView1
             // 
@@ -84,6 +52,7 @@
             this.Remove.TabIndex = 6;
             this.Remove.Text = "Remove";
             this.Remove.UseVisualStyleBackColor = true;
+            this.Remove.Click += new System.EventHandler(this.Remove_Click);
             // 
             // Order
             // 
@@ -95,17 +64,25 @@
             this.Order.UseVisualStyleBackColor = true;
             this.Order.Click += new System.EventHandler(this.Order_Click);
             // 
+            // Back
+            // 
+            this.Back.Location = new System.Drawing.Point(25, 39);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(75, 23);
+            this.Back.TabIndex = 8;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 356);
+            this.Controls.Add(this.Back);
             this.Controls.Add(this.Order);
             this.Controls.Add(this.Remove);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.Perfumes);
-            this.Controls.Add(this.MakeUp);
-            this.Controls.Add(this.Creams);
             this.Name = "Form2";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -114,12 +91,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Creams;
-        private System.Windows.Forms.Button MakeUp;
-        private System.Windows.Forms.Button Perfumes;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button Remove;
         private System.Windows.Forms.Button Order;
+        private System.Windows.Forms.Button Back;
     }
 }
