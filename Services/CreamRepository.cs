@@ -11,15 +11,15 @@ namespace products
 {
     public class CreamRepository
     {
-        public readonly ProductContext context;
+      
         public CreamRepository()
         {
-            var context = new ProductContext();
+          
         }
         public List<Cream> GetAll()
         {
             List<Cream> creams = null;
-            using (this.context)
+            using (var context = new ProductContext())
             {               
                creams = context.Creams.ToList();
             }           
@@ -28,7 +28,7 @@ namespace products
 
         public void takeData()
         {
-            using (this.context)
+            using (var context = new ProductContext())
             {
                 Cream cream = new Cream();
                 context.Creams.Add(cream);

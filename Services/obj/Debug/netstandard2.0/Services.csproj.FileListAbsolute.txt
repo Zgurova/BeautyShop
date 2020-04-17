@@ -1,6 +1,5 @@
 D:\BeautyShopNew\Services\bin\Debug\netstandard2.0\Services.deps.json
 D:\BeautyShopNew\Services\bin\Debug\netstandard2.0\Services.dll
-D:\BeautyShopNew\Services\bin\Debug\netstandard2.0\Services.pdb
 D:\BeautyShopNew\Services\bin\Debug\netstandard2.0\Data.dll
 D:\BeautyShopNew\Services\bin\Debug\netstandard2.0\Data.pdb
 D:\BeautyShopNew\Services\obj\Debug\netstandard2.0\Services.csprojAssemblyReference.cache
@@ -8,5 +7,6 @@ D:\BeautyShopNew\Services\obj\Debug\netstandard2.0\Services.csproj.CoreCompileIn
 D:\BeautyShopNew\Services\obj\Debug\netstandard2.0\Services.AssemblyInfoInputs.cache
 D:\BeautyShopNew\Services\obj\Debug\netstandard2.0\Services.AssemblyInfo.cs
 D:\BeautyShopNew\Services\obj\Debug\netstandard2.0\Services.csproj.CopyComplete
+D:\BeautyShopNew\Services\bin\Debug\netstandard2.0\Services.pdb
 D:\BeautyShopNew\Services\obj\Debug\netstandard2.0\Services.dll
 D:\BeautyShopNew\Services\obj\Debug\netstandard2.0\Services.pdb

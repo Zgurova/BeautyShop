@@ -98,10 +98,11 @@ namespace products
             this.Add.TabIndex = 6;
             this.Add.Text = "Add";
             this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.Add_Click_1);
             // 
             // Remove
             // 
-            this.Remove.Location = new System.Drawing.Point(552, 284);
+            this.Remove.Location = new System.Drawing.Point(459, 282);
             this.Remove.Name = "Remove";
             this.Remove.Size = new System.Drawing.Size(115, 39);
             this.Remove.TabIndex = 7;
