@@ -30,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\BeautyShopNew\\Data\\Data.csproj": {
-                "projectPath": "D:\\BeautyShopNew\\Data\\Data.csproj"
+              "D:\\BeautyShopNew\\products\\Products.csproj": {
+                "projectPath": "D:\\BeautyShopNew\\products\\Products.csproj"
               }
             }
           }
@@ -114,6 +114,97 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\BeautyShopNew\\products\\Products.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BeautyShopNew\\products\\Products.csproj",
+        "projectName": "Products",
+        "projectPath": "D:\\BeautyShopNew\\products\\Products.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\BeautyShopNew\\Data\\Data.csproj": {
+                "projectPath": "D:\\BeautyShopNew\\Data\\Data.csproj"
+              },
+              "D:\\BeautyShopNew\\Services\\Services.csproj": {
+                "projectPath": "D:\\BeautyShopNew\\Services\\Services.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\BeautyShopNew\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BeautyShopNew\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "D:\\BeautyShopNew\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\BeautyShopNew\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\BeautyShopNew\\Data\\Data.csproj": {
+                "projectPath": "D:\\BeautyShopNew\\Data\\Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

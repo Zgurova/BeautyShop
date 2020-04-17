@@ -22,25 +22,25 @@ namespace products
             }
             return cart;
         }
-        public List<Cream> GetAll()
+        public List<Cart> GetAll()
         {
-            List<Cream> creams = null;
+            List<Cart> cart = null;
             using (var context = new ProductContext())
             {
-                creams = context.Creams.ToList();
+                cart = context.Cart.ToList();
             }
-            return creams;
+            return cart;
         }
-
         public void takeData()
         {
             using (var context = new ProductContext())
             {
-                Cream cream = new Cream();
-                context.Creams.Add(cream);
+                Cart cart = new Cart();
+                context.Cart.Add(cart);
                 context.SaveChanges();
 
             }
         }
+
     }
 }

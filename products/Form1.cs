@@ -1,5 +1,4 @@
-﻿using Business;
-using Data;
+﻿using Data;
 using System;
 using System.Windows.Forms;
 
@@ -7,22 +6,11 @@ namespace products
 {
     public partial class Form1 : Form
     {
-       
-        private ProductBusiness productBusiness = new ProductBusiness();
+        private readonly ProductContext dbContext;
         public Form1()
         {
-            InitializeComponent();          
-        }
-        private void UpdateGrid()
-        {
-            dataGridView2.DataSource = productBusiness.GetAll();
-            dataGridView2.ReadOnly = true;
-            dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-        }
-        private void ResetSelect()
-        {
-            dataGridView2.ClearSelection();
-            dataGridView2.Enabled = true;
+            InitializeComponent();
+            dbContext = new ProductContext();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -56,27 +44,29 @@ namespace products
 
         private void Add_Click_1(object sender, EventArgs e)
         {
-            CartRepository cartRepository = new CartRepository();
+            var item = dataGridView2.SelectedRows[0].Cells;
+            var id = item[0].Value.ToString();
+            var name = item[1].Value.ToString();
+            decimal price = decimal.Parse(item[2].Value.ToString());
 
-            //dataGridView2.DataSource = cartRepository.Add();
-            // var perfume = new Perfume();
-
-            if (dataGridView2.SelectedRows.Count > 0)
+            Cart cart = new Cart(id, name, price);
+            using (var context = new ProductContext())
             {
-                var item = dataGridView2.SelectedRows[0].Cells;
-                var id = int.Parse(item[0].Value.ToString());
-                cartRepository.Add(item);
-                // UpdateGrid();
-                //ResetSelect();            
+                context.Cart.Add(cart);
+                context.SaveChanges();
             }
         }
 
         private void Cart_Click(object sender, EventArgs e)
         {
-          /*  Form2 f2 = new Form2();
-            f2.Show();*/
             CartRepository cartRepository = new CartRepository();
             dataGridView2.DataSource = cartRepository.GetAll();
         }
     }
 }
+   
+
+
+
+
+       

@@ -8,14 +8,29 @@ namespace products
 {
     public class Cart
     {
-        public string id { get; set; }
-        public string name { get; set; }
-        public int number_of_orders { get; set; }
-        public decimal price { get; set; }
-        public decimal totalPrice
+        private string id;
+        private string name;
+        private decimal price;
+
+        public Cart()
         {
-            get { return this.number_of_orders * price; }
+                
         }
+        public string Id { get; set; }
+
+        public string Name { get; set; }
+        
+        public decimal Price { get; set; }
+       
+
+        public Cart(string id, string name, decimal price)
+        {
+            this.Id = id;
+            this.Name = name;
+            this.Price = price;
+        }
+
+       
 
     }
 }

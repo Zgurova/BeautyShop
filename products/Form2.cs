@@ -1,5 +1,4 @@
-﻿using Business;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,12 +14,12 @@ namespace products
 {
     public partial class Form2 : Form
     {
-        private ProductBusiness productBusiness = new ProductBusiness();
+       
         public Form2()
         {
             InitializeComponent();
         }
-        private void UpdateGrid()
+       /* private void UpdateGrid()
         {
             dataGridView1.DataSource = productBusiness.GetAll();
             dataGridView1.ReadOnly = true;
@@ -30,11 +29,12 @@ namespace products
         {
             dataGridView1.ClearSelection();
             dataGridView1.Enabled = true;
-        }
+        }*/
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            CartRepository cartRepository = new CartRepository();
+            dataGridView1.DataSource = cartRepository.GetAll();
         }        
 
         private void Order_Click(object sender, EventArgs e)
@@ -45,14 +45,14 @@ namespace products
 
         private void Remove_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+           /* if (dataGridView1.SelectedRows.Count > 0)
             {
                 var item = dataGridView1.SelectedRows[0].Cells;
                 var id = int.Parse(item[0].Value.ToString());
                 productBusiness.Delete(id);
                 UpdateGrid();
                 ResetSelect();
-            }
+            }*/
         }
 
         private void Back_Click(object sender, EventArgs e)
