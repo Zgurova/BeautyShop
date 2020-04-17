@@ -36,8 +36,6 @@ namespace products
             this.Perfumes = new System.Windows.Forms.Button();
             this.Cart = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.Button();
-            this.Remove = new System.Windows.Forms.Button();
-            this.Order = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,30 +98,10 @@ namespace products
             this.Add.UseVisualStyleBackColor = true;
             this.Add.Click += new System.EventHandler(this.Add_Click_1);
             // 
-            // Remove
-            // 
-            this.Remove.Location = new System.Drawing.Point(459, 282);
-            this.Remove.Name = "Remove";
-            this.Remove.Size = new System.Drawing.Size(115, 39);
-            this.Remove.TabIndex = 7;
-            this.Remove.Text = "Remove";
-            this.Remove.UseVisualStyleBackColor = true;
-            // 
-            // Order
-            // 
-            this.Order.Location = new System.Drawing.Point(255, 284);
-            this.Order.Name = "Order";
-            this.Order.Size = new System.Drawing.Size(112, 38);
-            this.Order.TabIndex = 8;
-            this.Order.Text = "Order";
-            this.Order.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(702, 362);
-            this.Controls.Add(this.Order);
-            this.Controls.Add(this.Remove);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.Cart);
             this.Controls.Add(this.Perfumes);
@@ -145,8 +123,6 @@ namespace products
         private System.Windows.Forms.Button Perfumes;
         private System.Windows.Forms.Button Cart;
         private System.Windows.Forms.Button Add;
-        private System.Windows.Forms.Button Remove;
-        private System.Windows.Forms.Button Order;
 
         public EventHandler Remove_Click { get; private set; }
         public EventHandler Add_Click { get; private set; }

@@ -190,3 +190,5 @@ D:\BeautyShopNew\products\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.d
 D:\BeautyShopNew\products\obj\Debug\Products.csproj.CopyComplete
 D:\BeautyShopNew\products\bin\Debug\Services.dll
 D:\BeautyShopNew\products\bin\Debug\Services.pdb
+D:\BeautyShopNew\products\obj\Debug\products.Form2.resources
+D:\BeautyShopNew\products\obj\Debug\products.Form3.resources
