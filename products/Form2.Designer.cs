@@ -91,7 +91,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button Remove;
         private System.Windows.Forms.Button Order;
         private System.Windows.Forms.Button Back;

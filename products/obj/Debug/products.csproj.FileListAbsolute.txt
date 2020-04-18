@@ -177,7 +177,3 @@ D:\BeautyShopNew\products\obj\Debug\Products.csproj.GenerateResource.cache
 D:\BeautyShopNew\products\obj\Debug\Products.csproj.CoreCompileInputs.cache
 D:\BeautyShopNew\products\obj\Debug\products.exe
 D:\BeautyShopNew\products\obj\Debug\products.pdb
-D:\BeautyShopNew\products\bin\Debug\products.exe.config
-D:\BeautyShopNew\products\bin\Debug\products.exe
-D:\BeautyShopNew\products\bin\Debug\products.pdb
-D:\BeautyShopNew\products\obj\Debug\Products.csproj.CopyComplete

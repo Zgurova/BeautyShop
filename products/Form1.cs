@@ -59,8 +59,11 @@ namespace products
 
         private void Cart_Click(object sender, EventArgs e)
         {
+            Form2 f2 = new Form2();
+            f2.Show();
             CartRepository cartRepository = new CartRepository();
-            dataGridView2.DataSource = cartRepository.GetAll();
+            f2.dataGridView1.DataSource = cartRepository.GetAll();
+            this.Hide();
         }
     }
 }
