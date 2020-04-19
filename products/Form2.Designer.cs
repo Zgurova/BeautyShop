@@ -37,48 +37,53 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(246, 39);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(440, 208);
+            this.dataGridView1.Size = new System.Drawing.Size(424, 218);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // Remove
             // 
-            this.Remove.Location = new System.Drawing.Point(575, 288);
+            this.Remove.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Remove.Location = new System.Drawing.Point(559, 288);
             this.Remove.Name = "Remove";
             this.Remove.Size = new System.Drawing.Size(111, 38);
             this.Remove.TabIndex = 6;
             this.Remove.Text = "Remove";
-            this.Remove.UseVisualStyleBackColor = true;
+            this.Remove.UseVisualStyleBackColor = false;
             this.Remove.Click += new System.EventHandler(this.Remove_Click);
             // 
             // Order
             // 
+            this.Order.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Order.Location = new System.Drawing.Point(246, 288);
             this.Order.Name = "Order";
             this.Order.Size = new System.Drawing.Size(121, 38);
             this.Order.TabIndex = 7;
             this.Order.Text = "Order";
-            this.Order.UseVisualStyleBackColor = true;
+            this.Order.UseVisualStyleBackColor = false;
             this.Order.Click += new System.EventHandler(this.Order_Click);
             // 
             // Back
             // 
+            this.Back.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Back.Location = new System.Drawing.Point(25, 39);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(75, 23);
             this.Back.TabIndex = 8;
             this.Back.Text = "Back";
-            this.Back.UseVisualStyleBackColor = true;
+            this.Back.UseVisualStyleBackColor = false;
             this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 356);
+            this.BackColor = System.Drawing.SystemColors.Info;
+            this.ClientSize = new System.Drawing.Size(702, 362);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.Order);
             this.Controls.Add(this.Remove);

@@ -53,7 +53,7 @@ namespace products
             // 
             this.Creams.Location = new System.Drawing.Point(33, 32);
             this.Creams.Name = "Creams";
-            this.Creams.Size = new System.Drawing.Size(124, 42);
+            this.Creams.Size = new System.Drawing.Size(124, 40);
             this.Creams.TabIndex = 2;
             this.Creams.Text = "Creams";
             this.Creams.UseVisualStyleBackColor = true;
@@ -83,7 +83,7 @@ namespace products
             // 
             this.Cart.Location = new System.Drawing.Point(33, 282);
             this.Cart.Name = "Cart";
-            this.Cart.Size = new System.Drawing.Size(124, 39);
+            this.Cart.Size = new System.Drawing.Size(124, 40);
             this.Cart.TabIndex = 5;
             this.Cart.Text = "Cart";
             this.Cart.UseVisualStyleBackColor = true;
@@ -91,9 +91,9 @@ namespace products
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(566, 283);
+            this.Add.Location = new System.Drawing.Point(551, 282);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(101, 38);
+            this.Add.Size = new System.Drawing.Size(116, 40);
             this.Add.TabIndex = 6;
             this.Add.Text = "Add";
             this.Add.UseVisualStyleBackColor = true;
