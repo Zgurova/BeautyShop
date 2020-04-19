@@ -13,6 +13,15 @@ namespace products
         {
 
         }
+        public void Remove(string id)
+        {
+            using (var context=new ProductContext())
+            {
+                var customer = context.Cart.Find(id);
+                context.Cart.Remove(customer);
+                context.SaveChanges();
+            }
+        }
         public List<Cart> Add(object cosmetic)
         {
             List<Cart> cart = null;            

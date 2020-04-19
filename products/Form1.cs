@@ -1,4 +1,5 @@
-﻿using Data;
+﻿using Business;
+using Data;
 using System;
 using System.Windows.Forms;
 
@@ -6,7 +7,9 @@ namespace products
 {
     public partial class Form1 : Form
     {
+        
         private readonly ProductContext dbContext;
+       
         public Form1()
         {
             InitializeComponent();
@@ -64,6 +67,10 @@ namespace products
             CartRepository cartRepository = new CartRepository();
             f2.dataGridView1.DataSource = cartRepository.GetAll();
             this.Hide();
+        }
+        private void frm_menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

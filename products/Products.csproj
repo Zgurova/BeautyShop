@@ -284,6 +284,10 @@
     <None Include="Resources\makeUp1.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{36d74520-d0c6-45fe-aeb7-465a1a96ddac}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Data\Data.csproj">
       <Project>{6659e173-f3de-438e-91cb-2b2f23486ae8}</Project>
       <Name>Data</Name>
