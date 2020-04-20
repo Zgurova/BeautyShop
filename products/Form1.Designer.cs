@@ -43,7 +43,7 @@ namespace products
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(255, 32);
+            this.dataGridView2.Location = new System.Drawing.Point(397, 123);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(412, 218);
             this.dataGridView2.TabIndex = 1;
@@ -51,7 +51,7 @@ namespace products
             // 
             // Creams
             // 
-            this.Creams.Location = new System.Drawing.Point(33, 32);
+            this.Creams.Location = new System.Drawing.Point(169, 125);
             this.Creams.Name = "Creams";
             this.Creams.Size = new System.Drawing.Size(124, 40);
             this.Creams.TabIndex = 2;
@@ -61,7 +61,7 @@ namespace products
             // 
             // MakeUp
             // 
-            this.MakeUp.Location = new System.Drawing.Point(33, 104);
+            this.MakeUp.Location = new System.Drawing.Point(169, 197);
             this.MakeUp.Name = "MakeUp";
             this.MakeUp.Size = new System.Drawing.Size(124, 40);
             this.MakeUp.TabIndex = 3;
@@ -71,7 +71,7 @@ namespace products
             // 
             // Perfumes
             // 
-            this.Perfumes.Location = new System.Drawing.Point(33, 178);
+            this.Perfumes.Location = new System.Drawing.Point(169, 271);
             this.Perfumes.Name = "Perfumes";
             this.Perfumes.Size = new System.Drawing.Size(124, 40);
             this.Perfumes.TabIndex = 4;
@@ -81,7 +81,7 @@ namespace products
             // 
             // Cart
             // 
-            this.Cart.Location = new System.Drawing.Point(33, 282);
+            this.Cart.Location = new System.Drawing.Point(169, 375);
             this.Cart.Name = "Cart";
             this.Cart.Size = new System.Drawing.Size(124, 40);
             this.Cart.TabIndex = 5;
@@ -91,7 +91,7 @@ namespace products
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(551, 282);
+            this.Add.Location = new System.Drawing.Point(693, 401);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(116, 40);
             this.Add.TabIndex = 6;
@@ -102,7 +102,9 @@ namespace products
             // Form1
             // 
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(702, 362);
+            this.BackgroundImage = global::products.Properties.Resources.pUQiPgljEz;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(999, 563);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.Cart);
             this.Controls.Add(this.Perfumes);
@@ -110,6 +112,7 @@ namespace products
             this.Controls.Add(this.Creams);
             this.Controls.Add(this.dataGridView2);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 

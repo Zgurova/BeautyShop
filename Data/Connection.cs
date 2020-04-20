@@ -10,6 +10,6 @@ namespace Data
     {
 
         public static string ConnectionString =
-            "Server=(localdb)\\mssqllocaldb;Database=products;Trusted_Connection=True;";
+            "Server=DESKTOP-UAKA86K\\SQLEXPRESS;Database=products;Trusted_Connection=True;";
     }
 }

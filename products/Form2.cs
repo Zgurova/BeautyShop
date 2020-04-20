@@ -69,5 +69,21 @@ namespace products
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            CartRepository cartRepository = new CartRepository();
+            List<Cart> cart = cartRepository.GetAll();
+            decimal totalPrice = 0;
+            
+            foreach (var item in cart)
+            {
+                totalPrice += item.Price;
+            }
+            string totalPrice1 = totalPrice.ToString();
+
+            label1.Text = $"Total price: {totalPrice1} lv.";
+            UpdateGrid();
+        }
     }
 }
