@@ -38,12 +38,15 @@ namespace products
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
-        }        
-
+        }
+        
         private void Order_Click(object sender, EventArgs e)
         {
             Form3 f3 = new Form3();
-            f3.Show();
+            f3.Show();            
+            CartRepository cartRepository = new CartRepository();
+            List<Cart> cart = cartRepository.GetAll();
+            cart.Clear();
             this.Hide();
         }
 
@@ -64,25 +67,12 @@ namespace products
         {
             Form1 f1 = new Form1();
             f1.Show();
-        }
-        private void frm_menu_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            System.Windows.Forms.Application.Exit();
-        }
-
+        }       
         private void label1_Click(object sender, EventArgs e)
         {
-            CartRepository cartRepository = new CartRepository();
-            List<Cart> cart = cartRepository.GetAll();
-            decimal totalPrice = 0;
-            
-            foreach (var item in cart)
-            {
-                totalPrice += item.Price;
-            }
-            string totalPrice1 = totalPrice.ToString();
+            string totalPrice = productBusiness.TotalPrice();
 
-            label1.Text = $"Total price: {totalPrice1} lv.";
+            label1.Text = $"Total price: {totalPrice} lv.";
             UpdateGrid();
         }
     }

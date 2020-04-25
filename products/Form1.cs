@@ -68,10 +68,7 @@ namespace products
             f2.dataGridView1.DataSource = cartRepository.GetAll();
             this.Hide();
         }
-        private void frm_menu_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            System.Windows.Forms.Application.Exit();
-        }
+       
 
         private void Form1_Load_1(object sender, EventArgs e)
         {

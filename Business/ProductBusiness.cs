@@ -17,6 +17,19 @@ namespace Business
                 return productContext.Cart.ToList();
             }
         }
+        public string TotalPrice()
+        {
+            CartRepository cartRepository = new CartRepository();
+            List<Cart> cart = cartRepository.GetAll();
+            decimal totalPrice = 0;
+
+            foreach (var item in cart)
+            {
+                totalPrice += item.Price;
+            }
+            string totalPrice1 = totalPrice.ToString();
+            return totalPrice1;
+        }
         public Cart Get(int id)
         {
             using (productContext = new ProductContext())
